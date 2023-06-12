@@ -50,10 +50,7 @@ class HandleInertiaRequests extends Middleware
             ])),
             'carts_global_count' => $request->user() ? Cache::rememberForever('carts_global_count', fn () => Cart::whereBelongsTo($request->user())->whereNull('paid_at')->count()) : null,
 
-<<<<<<< HEAD
             Cache::tags('cart_global_count')->flush(),
-=======
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
         ]);
     }
 }

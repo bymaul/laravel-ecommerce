@@ -4,10 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\ProductResource;
 use App\Http\Resources\ProductSingleResource;
-<<<<<<< HEAD
 use App\Http\Resources\UserProductResource;
-=======
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -33,7 +30,6 @@ class ProductController extends Controller
         ]);
     }
 
-<<<<<<< HEAD
     public function purchased(Request $request)
     {
         $products = $request
@@ -48,8 +44,6 @@ class ProductController extends Controller
         ]);
     }
 
-=======
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
     /**
      * Show the form for creating a new resource.
      */
@@ -69,7 +63,6 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-<<<<<<< HEAD
     public function show(Request $request, Product $product)
     {
         $isProductPurchased = $request->user() ? $request->user()->products->contains($product->id) : null;
@@ -77,14 +70,6 @@ class ProductController extends Controller
         return inertia('Products/Show', [
             'product' => ProductSingleResource::make($product->load('category')),
             'isProductPurchased' => $isProductPurchased,
-=======
-    public function show(Product $product)
-    {
-        // return ProductSingleResource::make($product->load('category'));
-
-        return inertia('Products/Show', [
-            'product' => ProductSingleResource::make($product->load('category')),
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
         ]);
     }
 

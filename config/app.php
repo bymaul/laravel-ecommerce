@@ -70,11 +70,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'timezone' => env('APP_TIMEZONE', 'UTC'),
-=======
-    'timezone' => 'UTC',
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
 
     /*
     |--------------------------------------------------------------------------
@@ -169,11 +165,7 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-<<<<<<< HEAD
         App\Providers\BroadcastServiceProvider::class,
-=======
-        // App\Providers\BroadcastServiceProvider::class,
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
     ])->toArray(),

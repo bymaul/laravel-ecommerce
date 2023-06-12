@@ -2,15 +2,10 @@
 
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\DashboardController;
-<<<<<<< HEAD
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\PaymentNotificationController;
-=======
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\InvoiceController;
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,7 +23,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
 
-<<<<<<< HEAD
 Route::get('products/purchased', [ProductController::class, 'purchased'])->middleware('auth')->name('products.purchased');
 Route::resource('products', ProductController::class);
 
@@ -51,20 +45,4 @@ Route::middleware('auth')->group(function () {
 
 Route::post('api/notification/handling', [PaymentNotificationController::class, 'hit']);
 
-=======
-Route::resource('products', ProductController::class)->only(['index', 'show']);
-
-Route::post('cart/add-to-cart/{product:slug}', [CartController::class, 'store'])->name('cart.store');
-Route::get('cart', [CartController::class, 'index'])->name('cart.index');
-Route::delete('cart/delete/{cart}', [CartController::class, 'destroy'])->name('cart.destroy');
-
-Route::post('invoice', [InvoiceController::class, 'store'])->name('invoice.store');
-Route::get('invoice/{invoice:order_id}', [InvoiceController::class, 'show'])->name('invoice.show');
-
-Route::middleware('auth')->group(function () {
-
-    Route::get('/dashboard', DashboardController::class)->name('dashboard');
-});
-
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
 require __DIR__ . '/auth.php';

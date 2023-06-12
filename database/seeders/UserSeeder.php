@@ -19,17 +19,7 @@ class UserSeeder extends Seeder
                 'email' => 'maul@mail.com',
                 'email_verified_at' => now(),
                 'password' => bcrypt('password')
-<<<<<<< HEAD
             ]
-=======
-            ],
-            [
-                'name' => 'Hana Miranti',
-                'email' => 'hana@mail.com',
-                'email_verified_at' => now(),
-                'password' => bcrypt('password')
-            ],
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
         ])->each(fn ($q) => User::create($q));
     }
 }

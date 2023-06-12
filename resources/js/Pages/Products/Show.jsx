@@ -6,14 +6,9 @@ import { Head, Link } from "@inertiajs/react";
 import React from "react";
 import { router } from "@inertiajs/react";
 import { toast } from "react-hot-toast";
-<<<<<<< HEAD
 import LinkButton from "@/Components/LinkButton";
 
 export default function Show({ product, auth, isProductPurchased }) {
-=======
-
-export default function Show({ product }) {
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
     const AddToCart = () => {
         router.post(
             route("cart.store", product),
@@ -54,7 +49,6 @@ export default function Show({ product }) {
                                 {product.description}
                             </div>
                         </div>
-<<<<<<< HEAD
                         {auth.user ? (
                             isProductPurchased ? (
                                 <LinkButton href="/products/purchased">
@@ -70,11 +64,6 @@ export default function Show({ product }) {
                                 Add to Cart
                             </PrimaryButton>
                         )}
-=======
-                        <PrimaryButton onClick={AddToCart}>
-                            Add to Cart
-                        </PrimaryButton>
->>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
                     </div>
                 </div>
             </Container>
