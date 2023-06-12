@@ -43,7 +43,11 @@ function Td({ className, children }) {
     );
 }
 
+<<<<<<< HEAD
 function Empty({ colSpan, message = "No product found." }) {
+=======
+function Empty({ colSpan, message = "The cart is empty." }) {
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
     return (
         <tr>
             <td colspan={colSpan} className="bg-white">

@@ -49,9 +49,12 @@ class User extends Authenticatable
     {
         return $this->hasMany(Invoice::class);
     }
+<<<<<<< HEAD
 
     public function products()
     {
         return $this->belongsToMany(Product::class, 'user_products');
     }
+=======
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
 }

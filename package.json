@@ -14,10 +14,15 @@
         "@vitejs/plugin-react": "^3.0.0",
         "autoprefixer": "^10.4.12",
         "axios": "^1.1.2",
+<<<<<<< HEAD
         "laravel-echo": "^1.15.1",
         "laravel-vite-plugin": "^0.7.5",
         "postcss": "^8.4.18",
         "pusher-js": "^8.0.2",
+=======
+        "laravel-vite-plugin": "^0.7.5",
+        "postcss": "^8.4.18",
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "tailwindcss": "^3.2.1",

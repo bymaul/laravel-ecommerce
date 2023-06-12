@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "19655e8c51b6d20a012adbb3687db8bf",
+=======
+    "content-hash": "8dc2b236ae4e18becadb8649666419df",
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
     "packages": [
         {
             "name": "brick/math",
@@ -2327,6 +2331,7 @@
             "time": "2023-02-08T01:06:31+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "paragonie/random_compat",
             "version": "v9.99.100",
             "source": {
@@ -2463,6 +2468,8 @@
             "time": "2023-04-30T00:54:53+00:00"
         },
         {
+=======
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
             "name": "phpoption/phpoption",
             "version": "1.9.1",
             "source": {
@@ -2978,6 +2985,7 @@
             "time": "2023-05-05T20:02:42+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "pusher/pusher-php-server",
             "version": "7.2.3",
             "source": {
@@ -3039,6 +3047,8 @@
             "time": "2023-05-17T16:00:06+00:00"
         },
         {
+=======
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {

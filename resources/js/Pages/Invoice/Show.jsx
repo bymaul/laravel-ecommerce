@@ -1,5 +1,6 @@
 import Container from "@/Components/Container";
 import App from "@/Layouts/AppLayout";
+<<<<<<< HEAD
 import { Head, router } from "@inertiajs/react";
 import React from "react";
 
@@ -12,12 +13,19 @@ export default function Show({ auth, invoice }) {
             }
         }
     );
+=======
+import { Head } from "@inertiajs/react";
+import React from "react";
+
+export default function Show({ invoice }) {
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
     return (
         <>
             <Head title={`Your order - ${invoice.order_id}`} />
             <Container>
                 <div className="grid grid-cols-2 gap-10">
                     <div>
+<<<<<<< HEAD
                         {invoice.gopay ? (
                             <div>
                                 <div className="text-center text-sm">
@@ -37,6 +45,14 @@ export default function Show({ auth, invoice }) {
                                     alt=""
                                 />
                             </div>
+=======
+                        {invoice.qr_code ? (
+                            <img
+                                className="border shadow-sm rounded-lg"
+                                src={invoice.qr_code}
+                                alt=""
+                            />
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
                         ) : null}
                         {invoice.bank ? (
                             <div className="font-semibold text-xl uppercase">

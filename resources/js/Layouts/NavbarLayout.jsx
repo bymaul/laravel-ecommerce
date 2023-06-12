@@ -37,9 +37,12 @@ export default function NavbarLayout() {
                                     <DropdownMenu.Link href="/cart">
                                         Your Cart
                                     </DropdownMenu.Link>
+<<<<<<< HEAD
                                     <DropdownMenu.Link href="/products/purchased">
                                         Your Products
                                     </DropdownMenu.Link>
+=======
+>>>>>>> 6e3e94820b7471dc5e4b5aebf91e2131b2d2c7a6
                                     <DropdownMenu.Link href="/history">
                                         Your History
                                     </DropdownMenu.Link>
