@@ -23,8 +23,6 @@ class ProductController extends Controller
             ->paginate(8)
             ->withQueryString();
 
-        // return ProductResource::collection($products);
-
         return inertia('Products/Index', [
             'products' => ProductResource::collection($products),
         ]);

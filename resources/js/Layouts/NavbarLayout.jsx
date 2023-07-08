@@ -1,4 +1,4 @@
-import { usePage } from "@inertiajs/react";
+import { Link, usePage } from "@inertiajs/react";
 import React from "react";
 import ApplicationLogo from "@/Components/ApplicationLogo";
 import Container from "@/Components/Container";
@@ -11,7 +11,9 @@ export default function NavbarLayout() {
         <nav className="bg-white border-b py-2">
             <Container>
                 <div className="flex items-center justify-between">
-                    <ApplicationLogo />
+                    <Link href="/">
+                        <ApplicationLogo />
+                    </Link>
                     <div className="flex items-center gap-x-6">
                         <NavLink href="/">Home</NavLink>
                         <NavLink href="/products">Products</NavLink>
@@ -31,9 +33,8 @@ export default function NavbarLayout() {
                                     <DropdownMenu.Link href="/dashboard ">
                                         Dashboard
                                     </DropdownMenu.Link>
-                                    <DropdownMenu.Link href="/profile">
-                                        Profile
-                                    </DropdownMenu.Link>
+
+                                    <DropdownMenu.Divider />
                                     <DropdownMenu.Link href="/cart">
                                         Your Cart
                                     </DropdownMenu.Link>
@@ -42,6 +43,10 @@ export default function NavbarLayout() {
                                     </DropdownMenu.Link>
                                     <DropdownMenu.Link href="/history">
                                         Your History
+                                    </DropdownMenu.Link>
+                                    <DropdownMenu.Divider />
+                                    <DropdownMenu.Link href="/profile">
+                                        Profile
                                     </DropdownMenu.Link>
                                     <DropdownMenu.Link
                                         href="/logout"
