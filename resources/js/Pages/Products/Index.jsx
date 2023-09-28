@@ -4,7 +4,6 @@ import Pagination from "@/Components/Pagination";
 import ProductItem from "@/Components/ProductItem";
 import App from "@/Layouts/AppLayout";
 import { Head } from "@inertiajs/react";
-import React from "react";
 
 export default function Index(props) {
     const { data: products, meta, links } = props.products;

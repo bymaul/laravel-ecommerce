@@ -1,9 +1,8 @@
-import { Link, usePage } from "@inertiajs/react";
-import React from "react";
 import ApplicationLogo from "@/Components/ApplicationLogo";
 import Container from "@/Components/Container";
-import NavLink from "@/Components/NavLink";
 import DropdownMenu from "@/Components/DropdownMenu";
+import NavLink from "@/Components/NavLink";
+import { Link, usePage } from "@inertiajs/react";
 
 export default function NavbarLayout() {
     const { auth, categories_global, carts_global_count } = usePage().props;

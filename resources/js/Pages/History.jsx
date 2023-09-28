@@ -4,7 +4,6 @@ import Pagination from "@/Components/Pagination";
 import Table from "@/Components/Table";
 import App from "@/Layouts/AppLayout";
 import { Head, Link } from "@inertiajs/react";
-import React from "react";
 
 export default function History(props) {
     const { data: carts, meta, links } = props.carts;

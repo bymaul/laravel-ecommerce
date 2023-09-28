@@ -1,12 +1,10 @@
 import Container from "@/Components/Container";
+import LinkButton from "@/Components/LinkButton";
 import PrimaryButton from "@/Components/PrimaryButton";
 import App from "@/Layouts/AppLayout";
 import { numberFormat } from "@/Libs/helper";
-import { Head, Link } from "@inertiajs/react";
-import React from "react";
-import { router } from "@inertiajs/react";
+import { Head, Link, router } from "@inertiajs/react";
 import { toast } from "react-hot-toast";
-import LinkButton from "@/Components/LinkButton";
 
 export default function Show({ product, auth, isProductPurchased }) {
     const AddToCart = () => {

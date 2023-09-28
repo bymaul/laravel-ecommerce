@@ -1,6 +1,6 @@
 import { useState } from "react";
-import NavbarLayout from "./NavbarLayout";
 import { Toaster } from "react-hot-toast";
+import NavbarLayout from "./NavbarLayout";
 
 export default function App({ user, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] =

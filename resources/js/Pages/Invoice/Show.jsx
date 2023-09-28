@@ -1,7 +1,6 @@
 import Container from "@/Components/Container";
 import App from "@/Layouts/AppLayout";
 import { Head, router } from "@inertiajs/react";
-import React from "react";
 
 export default function Show({ auth, invoice }) {
     Echo.private(`invoice.paid.${auth.user.id}`).listen(

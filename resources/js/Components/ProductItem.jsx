@@ -1,6 +1,5 @@
 import { numberFormat } from "@/Libs/Helper";
 import { Link } from "@inertiajs/react";
-import React from "react";
 
 export default function ProductItem({ product }) {
     return (

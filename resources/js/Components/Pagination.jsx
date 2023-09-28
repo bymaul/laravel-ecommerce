@@ -1,6 +1,5 @@
 import { Link } from "@inertiajs/react";
 import clsx from "clsx";
-import React from "react";
 
 export default function Pagination({ marginTop = "mt-10", meta, links }) {
     return (

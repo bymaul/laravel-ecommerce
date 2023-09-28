@@ -1,15 +1,13 @@
-import React from "react";
+import Card from "@/Components/Card";
 import Container from "@/Components/Container";
-import Table from "@/Components/Table";
+import DropdownMenu from "@/Components/DropdownMenu";
 import Header from "@/Components/Header";
 import PrimaryButton from "@/Components/PrimaryButton";
-import LinkButton from "@/Components/LinkButton";
-import Card from "@/Components/Card";
+import Table from "@/Components/Table";
 import App from "@/Layouts/AppLayout";
 import { numberFormat } from "@/Libs/helper";
 import { Head, Link, router } from "@inertiajs/react";
 import { toast } from "react-hot-toast";
-import DropdownMenu from "@/Components/DropdownMenu";
 
 export default function Index({ carts }) {
     const onDeleteHandler = (cart_id) => {

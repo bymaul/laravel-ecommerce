@@ -4,7 +4,6 @@ import Pagination from "@/Components/Pagination";
 import Table from "@/Components/Table";
 import App from "@/Layouts/AppLayout";
 import { Head } from "@inertiajs/react";
-import React from "react";
 
 export default function Purchased(props) {
     const { data: products, meta, links } = props.products;

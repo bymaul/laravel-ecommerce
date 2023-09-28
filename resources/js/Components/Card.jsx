@@ -1,5 +1,3 @@
-import React from "react";
-
 function Card({ children }) {
     return <div className="border rounded-lg overflow-hidden">{children}</div>;
 }
